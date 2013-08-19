@@ -38,6 +38,7 @@ gem 'gibbon'
 gem 'google_drive'
 gem 'high_voltage'
 gem 'simple_form', '>= 3.0.0.rc'
+gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
 
 
 group :development do

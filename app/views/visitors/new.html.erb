@@ -1,4 +1,16 @@
 <h3>Home</h3>
-<p>Welcome to the home of <%= @owner.name %>.</p>
-<p>I was born on <%= @owner.birthdate %>.</p>
-<p>Only <%= @owner.countdown %> days until my birthday!</p>
+<br/>
+<%= image_tag "toolbox/toolbox.jpg" %>
+
+<div style="text-align: center; margin-top: 20px">
+    <div class="span4">
+        <div>
+            <%= simple_form_for @visitor do |f| %>
+                <%= f.error_notification %>
+                <%= f.input :email, label: false, :placeholder => 'Your email here' %>
+                <br/>
+                <%= f.submit "Sign up for email notification", :class => "btn btn-primary"%>
+            <% end %>
+        </div>
+    </div>
+</div>

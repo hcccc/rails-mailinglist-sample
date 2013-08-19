@@ -1,6 +1,7 @@
 LearnRails::Application.routes.draw do
 
   resources :contacts, only: [:new, :create]
+  resources :visitors, only: [:new, :create]
   #post 'contact' => 'contacts#process_form'
   root :to => 'visitors#new'
   # The priority is based upon order of creation: first created -> highest priority.
